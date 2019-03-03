@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { Component} from 'react';
 import { connect } from 'react-redux'
 const mapStateToProps = (state) => {
-    return {count: state.articles.count}
+    return {count: state.articles.length}
 }
 class ConnectedCounter extends Component {
     constructor() {
